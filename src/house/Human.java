@@ -1,16 +1,23 @@
 package house;
 
 public class Human {
-    private String secret;
-    protected String news;
-    String experience;
-    public String gossip;
+    private final String secret;
+    private final String news;
+    private final String experience;
+    private final String gossip;
 
-    private String getSecret() {
+    public Human(String secret, String news, String experience, String gossip) {
+        this.secret = secret;
+        this.news = news;
+        this.experience = experience;
+        this.gossip = gossip;
+    }
+
+    String getSecret() {
         return secret;
     }
 
-    protected String getNews() {
+    String getNews() {
         return news;
     }
 
@@ -18,7 +25,7 @@ public class Human {
         return experience;
     }
 
-    public String getGossip() {
+    String getGossip() {
         return gossip;
     }
 }
