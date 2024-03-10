@@ -1,16 +1,14 @@
 package house;
 
-    public class Main {
-        public static void main(String[] args) {
-            // Creating a new Human object
-            Human person = new Human("My secret", "Latest news", "Exciting experience", "Juicy gossip");
+public class Main {
+    public static void main(String[] args) {
+        Human human = new Human("My secret", "Latest news", "Years of experience", "Interesting gossip");
 
-            // Accessing and printing the values using the getter methods
-            System.out.println("Secret: " + person.getSecret());
-            System.out.println("News: " + person.getNews());
-            System.out.println("Experience: " + person.getExperience());
-            System.out.println("Gossip: " + person.getGossip());
-        }
+        System.out.println("Secret: " + human.getSecret());
+        System.out.println("News: " + human.getNews());
+        System.out.println("Experience: " + human.getExperience());
+        System.out.println("Gossip: " + human.getGossip());
     }
+}
 
 
