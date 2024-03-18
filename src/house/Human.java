@@ -13,7 +13,7 @@ public class Human {
         this.gossip = gossip;
     }
 
-    String getSecret() {
+    private String getSecret() {
         return secret;
     }
 
