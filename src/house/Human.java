@@ -1,10 +1,10 @@
 package house;
 
 public class Human {
-    private String secret;
-    private String news;
-    private String experience;
-    private String gossip;
+    private final String secret;
+    private final String news;
+    private final String experience;
+    private final String gossip;
 
     public Human(String secret, String news, String experience, String gossip) {
         this.secret = secret;
@@ -13,11 +13,11 @@ public class Human {
         this.gossip = gossip;
     }
 
-    public String getSecret() {
+    String getSecret() {
         return secret;
     }
 
-    String getNews() {
+    public String getNews() {
         return news;
     }
 
